@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="android_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>
+    <parameter name="buildNumber" value="5362"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="HindustanTimes-Android-MWeb-HomeTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HomeTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-OpenInAppTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.OpenInAppTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-HistoryTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HistoryTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-ListingTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.ListingTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-SocialSharingTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SocialSharingTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-HamburgerTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HamburgerTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-InlineStoriesTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.InlineStoriesTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-AdvertismentTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.AdvertismentTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-StoryTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.StoryTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-SearchTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SearchTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-SectionTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SectionTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-BookmarkTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.BookmarkTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-BreadCrumbsTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.BreadCrumbsTest"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-iOS-amp">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="LiveMint"></parameter>
+    <parameter name="executionType" value="Regression"></parameter>
+    <parameter name="platformName" value="ios_amp"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="iphone11_safari"></parameter>
+    <parameter name="buildNumber" value="4002"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LiveMintTest-iOS-amp-HamburgerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.HamburgerTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-iOS-amp-MarketTickerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketTickerTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-PageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-PaywallTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PaywallTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-iOS-amp-StoryPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.StoryPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-verifyForYouPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ForYouTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-MarketPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-PoliticsTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PoliticsPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-iOS-amp-verifyMoneyPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MoneyTest"></class>
+        </classes>
+    </test>
+
+
+    <test name="LiveMintTest-iOS-amp-CompaniesPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.CompaniesPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-amp-SectionPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SectionPageTest"></class>
+        </classes>
+    </test>
+</suite>
+

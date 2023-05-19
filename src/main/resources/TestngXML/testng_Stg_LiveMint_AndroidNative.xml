@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-Android-Native">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+        </listeners>
+    
+<!--    <parameter name="environment" value="stg"></parameter>-->
+<!--    <parameter name="projectName" value="LiveMint"></parameter>-->
+<!--    <parameter name="executionType" value="regression"></parameter>-->
+<!--    <parameter name="platformName" value="android_native"></parameter>-->
+<!--    <parameter name="browser" value=""></parameter>-->
+<!--    <parameter name="browserMode" value=""></parameter>-->
+<!--    <parameter name="isBrowserStack" value="true"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="pixel3_native_stg"></parameter>-->
+<!--    <parameter name="buildNumber" value="203"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LoginPageTest" group-by-instances="true">
+        <classes><class name="SSO.LMLoginTest"></class></classes>
+    </test>
+    <test name="EditProfileTest" group-by-instances="true">
+        <classes><class name="Subscription.EditProfileTest"></class></classes>
+    </test>
+    <test name="LMGeneralTest" group-by-instances="true">
+        <classes><class name="Subscription.LMGeneralTest"></class></classes>
+    </test>
+    <test name="PlanPageTest" group-by-instances="true">
+    <classes><class name="Subscription.PlanPageTest"></class></classes>
+</test>
+</suite>

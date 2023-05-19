@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+  "access_key": "o7zyqfa312aP3vQ6F7h8",
+  "capabilities": {
+    "project": "Combined Mobile SSO",
+    "build": "LH Test Android_MWeb",
+    "name": "LH Test Mobile Website",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "browser": "Chrome",
+    "browserstack.video": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true,
+    "browserstack.seleniumLogs": true,
+    "acceptSslCert": true
+  },
+  "environments": [
+    {
+      "device": "Google Pixel 4",
+      "os_version": "11.0"
+    }
+  ]
+}

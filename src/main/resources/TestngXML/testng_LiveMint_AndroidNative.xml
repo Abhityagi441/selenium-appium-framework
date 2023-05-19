@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-Android-Native">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+<!--    <parameter name="environment" value="prod"></parameter>-->
+<!--    <parameter name="projectName" value="LiveMint"></parameter>-->
+<!--    <parameter name="executionType" value="sanity"></parameter>-->
+<!--    <parameter name="platformName" value="android_native"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="browserMode" value="normal"></parameter>-->
+<!--    <parameter name="isBrowserStack" value="true"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="pixel3_native"></parameter>-->
+<!--    <parameter name="buildNumber" value="2003"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LiveMintTest-Android-Native-ExplorePageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ExplorePageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-NewsInNumberPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NewsInNumberPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-HomeTrendingStocksWidgetTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.TrendingStocksWidgetTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-MintLoungeTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MintLoungeTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-MarketPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-HomePageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.HomePageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-DailyDigestPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.DailyDigestPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-PodCastPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PodCastTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-ForYouPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ForYouTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-MarketTickerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketTickerTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-NewsPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NewsTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-LMPremiumPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.LMPremiumPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-NavigationTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NavigationTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-SectionPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SectionPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-SubscriptionPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SubscriptionPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-StoryPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.StoryPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-ChooseThemeTest" group-by-instances="true">
+        <classes>
+          <class name="LiveMint.ChooseThemeTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-PageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-ShareTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ShareTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-MyAccountTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MyAccountTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-BookmarkTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.BookmarkTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-PaywallTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PaywallTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-LoginTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-SettingsTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SettingsTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-ClickStoryTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ClickStoryTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-AdvertisementTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.AdvertisementTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Native-NewsLetterTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NewsLettersTest"></class>
+        </classes>
+    </test>
+</suite>
+

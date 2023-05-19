@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+   <!-- <parameter name="environment" value="qa"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="sanity"></parameter>
+    <parameter name="platformName" value="ios_web"></parameter>
+    <parameter name="browser" value="safari"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="iphone11_safari"></parameter>
+    <parameter name="buildNumber" value="9090"></parameter>
+    <parameter name="googleSheetFlag" value="false"></parameter>-->
+
+    <test name="HindustanTimesLoginTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.LevelTest"/>
+            <class name="HindustanTimes.SocialSharingTest"/>
+            <class name="HindustanTimes.SectionTest"/>
+            <class name="HindustanTimes.BreadCrumbsTest"/>
+            <class name="HindustanTimes.HomeTest"/>
+            <class name="HindustanTimes.ListingTest"/>
+            <class name="HindustanTimes.SearchTest"/>
+            <class name="HindustanTimes.HamburgerTest"/>
+            <class name="HindustanTimes.AdvertismentTest"/>
+            <class name="HindustanTimes.InlineStoriesTest"/>
+            <class name="HindustanTimes.StoryTest"/>
+            <class name="HindustanTimes.BookmarkTest"/>
+            <class name="HindustanTimes.OpenInAppTest"/>
+            <class name="HindustanTimes.HistoryTest"/>
+        </classes>
+    </test>
+</suite>

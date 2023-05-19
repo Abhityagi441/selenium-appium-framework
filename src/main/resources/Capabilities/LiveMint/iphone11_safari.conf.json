@@ -1,0 +1,26 @@
+{
+  "server": "hub-cloud.browserstack.com",
+    "username": "ankitmittal_pMJb8g",
+    "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "LM IOS Web SSO",
+    "build": "LM Test IOS",
+    "name": "IOS Web SSO",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 300,
+    "browser": "Safari",
+    "browserstack.video": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true,
+    "browserstack.seleniumLogs": true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    { 
+      "device": "iPhone 12 Pro",
+      "os_version": "14.1"
+    }
+  ]
+}

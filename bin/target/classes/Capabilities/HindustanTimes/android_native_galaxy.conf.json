@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "SdLehx7vNLKVUpjmsRWz",
+
+  "capabilities": {
+    "project": "HT Android Native SSO",
+    "build": "HT Test Android Native",
+    "name": "Android Native Test",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "app": "bs://f909fe58f268d879c4155e03baa427597405cc62",
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true,
+  },
+
+  "environments": [
+    { 
+      "device": "Samsung Galaxy S8 Plus",
+      "os_version": "9.0"
+    }
+  ]
+}

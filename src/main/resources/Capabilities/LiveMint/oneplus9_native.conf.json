@@ -1,0 +1,26 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+  "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "LM Android Native",
+    "build": "Test Android Native",
+    "name": "LM Android Native Test",
+    "browserstack.debug": true,
+    "app": "gulshantomar_J6VRSH/LMAndroidApp",
+    "browserstack.idleTimeout": 260,
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.video": true,
+    "browserstack.networkLogs": true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    {
+      "device": "One Plus 9",
+      "os_version": "11.0"
+    }
+  ]
+}

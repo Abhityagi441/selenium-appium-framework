@@ -1,0 +1,27 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "SdLehx7vNLKVUpjmsRWz",
+
+  "capabilities": {
+    "project": "Combined Web SSO",
+    "build": "SSO Web",
+    "name": "SSO Web Desktop Website",
+    "browser": "Chrome",
+    "os_version": "10",
+    "resolution": "1920x1080",
+    "browser_version": "88.0",
+    "os": "Windows",
+    "browserstack.video": true,
+    "browserstack.idleTimeout": 300,
+    "browserstack.seleniumLogs": true,
+    "browserstack.networkLogs": true,
+    "browserstack.debug": true
+  },
+  "environments": [
+    {
+      "device": "Windows 10",
+      "os_version": "10"
+    }
+  ]
+}

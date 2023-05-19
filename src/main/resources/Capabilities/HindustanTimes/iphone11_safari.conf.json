@@ -1,0 +1,33 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+   "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "HT IOS Web Regression",
+    "build": "HT Test Regression",
+    "name": "IOS Web Regression",
+    "browserstack.debug": true,
+    "browser": "Safari",
+    "browserstack.idleTimeout": 220,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs" : true,
+    "autoAcceptAlerts": true,
+    "autoGrantPermissions": true,
+    "autoAcceptAlerts": true,
+    "safariAllowPopups": true,
+    "unexpectedAlertBehaviour": "accept",
+    "autoGrantPermissions": true,
+    "browserstack.networkLogs" : true,
+    "unexpectedAlertBehaviour": "accept",
+    "safariAllowPopups": true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    { 
+      "device": "iPhone 11",
+      "os_version": "14.0"
+    }
+  ]
+}

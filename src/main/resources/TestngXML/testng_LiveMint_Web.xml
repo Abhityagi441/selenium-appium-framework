@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-Desktop-Web">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"/>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="LiveMint"></parameter>
+    <parameter name="executionType" value="sanity"></parameter>
+    <parameter name="platformName" value="desktop_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>
+    <parameter name="buildNumber" value="7000"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LiveMintTest-Desktop-Web-verifyRHSWidgetsOnHomePageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.RHSWidgetsOnHomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-verifyHindustanWidgetOnHomePage" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.HindustanWidgetOnHomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-BookmarkTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.BookmarkTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-HamburgerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.HamburgerTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-MarketTickerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketTickerTest"/>
+        </classes>
+    </test>
+
+
+    <test name="LiveMintTest-Desktop-Web-MyAccountTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MyAccountTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-NotificationTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NotificationTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-PageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-ShareTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ShareTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-SitemapTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SitemapTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-StoryPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.StoryPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-ListenToArticleTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ListenToArticleTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-LoginTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-AdvertisementTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.AdvertisementTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-MarketPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-verifyNewsletterPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NewsLettersTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-verifyForYouTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ForYouTest"/>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Desktop-Web-VerifyMutualFundWidget" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MutualFundPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-PoliticsTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PoliticsPageTest"/>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Desktop-Web-EducationTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.EducationPageTest"/>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Desktop-Web-verifyWsjPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.WsjTest"/>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Desktop-Web-verifyMoneyPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MoneyTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-CompaniesPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.CompaniesPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-SectionPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SectionPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-verifyLHSHomepage" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.LhsTest"/>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-WebStoriesTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.WebStoriesTest"/>
+        </classes>
+    </test>
+</suite>

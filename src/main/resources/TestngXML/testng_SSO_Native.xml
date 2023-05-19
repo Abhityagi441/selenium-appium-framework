@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SSOWebSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+<!--    <parameter name="environment" value="prod"></parameter>-->
+<!--    <parameter name="projectName" value="SSO"></parameter>-->
+<!--    <parameter name="executionType" value="sanity"></parameter>-->
+<!--    <parameter name="platformName" value="ios_web"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="browserMode" value="normal"/>-->
+<!--    <parameter name="isBrowserStack" value="true"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="iphone12_native"></parameter>-->
+<!--    <parameter name="buildNumber" value="1223"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LMLoginTest" group-by-instances="true">
+        <parameter name="application" value="LiveMint"/>
+        <classes><class name="SSO.LoginTest"></class></classes>
+    </test>
+    <test name="HTLoginTest" group-by-instances="true">
+        <parameter name="application" value="HindustanTimes"/>
+        <classes><class name="SSO.LoginTest"></class></classes>
+    </test>
+    <test name="LHLoginTest" group-by-instances="true">
+        <parameter name="application" value="LiveHindustan"/>
+        <classes><class name="SSO.LoginTest"></class></classes>
+    </test>
+</suite>

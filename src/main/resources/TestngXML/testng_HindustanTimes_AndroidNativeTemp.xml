@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="android_native"></parameter>
+    <parameter name="browser" value=""></parameter>
+    <parameter name="browserMode" value=""></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="pixel4_native_SSO"></parameter>
+    <parameter name="buildNumber" value="2474"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>
+
+    <test name="HindustanTimes-Android-Native-HomeTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HomeTest">
+                <methods>
+                    <exclude name="verifyAllTabInQuickRead"></exclude>
+                    <exclude name="verifyBehaviourLoggedInUserSubscribeButtonOnDailyNewsCapsule"></exclude>
+                    <exclude name="verifyBehaviourLoggedInUserSubscribeButtonOnHTEdCalling"></exclude>
+                    <exclude name="verifyBehaviourNonLoggedInUserSubscribeButtonOnDailyNewsCapsule"></exclude>
+                    <exclude name="verifyBehaviourNonLoggedInUserSubscribeButtonOnHTKickOff"></exclude>
+                    <exclude name="verifyBehaviourNonLoggedInUserSubscribeButtonOnHTWknd"></exclude>
+                    <exclude name="verifyDailyDigestDisplayedOnExplore"></exclude>
+                    <exclude name="verifyDailyDigestStoryRedirection"></exclude>
+                    <exclude name="verifyEPaperRedirectionFromCricketPageOnHeader"></exclude>
+                    <exclude name="verifyEPaperRedirectionFromHomePageOnHeaderForSignedInUser"></exclude>
+                    <exclude name="verifyEPaperRedirectionFromPremiumPageOnHeader"></exclude>
+                    <exclude name="verifyEPaperRedirectionOnHeaderForSignedInUser"></exclude>
+                    <exclude name="verifyEmailAddressIsPrefilledOnDailyNewsCapsule"></exclude>
+                    <exclude name="verifyEpaperAndSearchOption"></exclude>
+                    <exclude name="verifyHomePageLoadingVerification"></exclude>
+                    <exclude name="verifyHomeTabHeader"></exclude>
+                    <exclude name="verifyMostReadSection"></exclude>
+                    <exclude name="verifyNewslettersCarouselDisplayed"></exclude>
+                    <exclude name="verifyPhotosSection"></exclude>
+                    <exclude name="verifyQuickReadFirstAndSecondWithSwipe"></exclude>
+                    <exclude name="verifyQuickReadsAllTabRedirection"></exclude>
+                    <exclude name="verifyQuickReadsRedirection"></exclude>
+                    <exclude name="verifyRedirectToStoryFromWebStoriesCarousel"></exclude>
+                    <exclude name="verifyRedirectToStoryIfTabOnBlankSpaceInQuickReads"></exclude>
+                    <exclude name="verifyRedirectionOnPhotosFromExplore"></exclude>
+                    <exclude name="verifyRedirectionOnTappingExplore"></exclude>
+                    <exclude name="verifyRedirectionWhenTabOnReadNowOnNewsletters"></exclude>
+                    <exclude name="verifyRedirectionWhenTapOnViewAllLinkFromRecommendedForYouCarousel"></exclude>
+                    <exclude name="verifySecondAdAfter8SwipeInQuickReads"></exclude>
+                    <exclude name="verifySectionPageSelectedCityShownInHomePage"></exclude>
+                    <exclude name="verifyShareOption"></exclude>
+                    <exclude name="verifyTabOnXInSubscribeToNewsletterBehaviour"></exclude>
+                    <exclude name="verifyTapOnSectionSubsectionRedirectToSectionPage"></exclude>
+                    <exclude name="verifyWebStoriesSection"></exclude>
+                    <exclude name="verifyDailyDigestStoryShare"></exclude>
+                    <exclude name="verifyEmailAddressNewsLetterTextOnDailyNewsCapsule"></exclude>
+                    <exclude name="verifyFirstAdAfter4StoriesInQuickReadPage"></exclude>
+                    <exclude name="verifyQuickreadsReadFullStoryRedirectionForBackpress"></exclude>
+                    <exclude name="verifyNewsLetterSubscribeOnDailyNewsCapsuleForMobileNumberLoggedInUser"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="ios_native"></parameter>
+    <parameter name="browser" value=""></parameter>
+    <parameter name="browserMode" value=""></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="iphone12_native"></parameter>
+    <parameter name="buildNumber" value="2065"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <!--<test name="HindustanTimesSectionTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SectionTest">
+                <methods>
+                    <include name="verifyRedirectionWhenTapOnOtherSelectedCities"></include>
+                    <include name="verifyCityNameDisplayedAfterAdWithNews"></include>
+                    <include name="verifyTemperatureDisplayedInCitiesSection"></include>
+                    <include name="verifyDateInCitiesAfterSelectedCity"></include>
+                    <include name="verifyBehaviourWhenUserSelectAnyCityAndTapsOnMayBeLaterButton"></include>
+                    <include name="verifySelectedCityShownUnderCitiesSection"></include>
+                    <include name="verifyPopUpWhenSelectAnyCity"></include>
+                    <include name="verifyBehaviourNoCitySelectedAndTapsOnSaveChangesButton"></include>
+                    <include name="verifyBehaviourWhenUserTapsOnMayBeLaterButton"></include>
+                    <include name="verifyBehaviourWhenUserTapsOnPlusButtonBeforeCityName"></include>
+                    <include name="verifyOthersOptionInCities"></include>
+                    <include name="verifyMayBeLaterAndSaveChangesButton"></include>
+                    <include name="verifyHorizontalLinesAtEndOfCityName"></include>
+                    <include name="verifyPlusSignDisplayBeforeCityName"></include>
+                    <include name="verifyNoRedirectionWhenTapOnWhenAnyWhereExceptGotItButton"></include>
+                    <include name="verifyRedirectionWhenTapOnGotItButton"></include>
+                    <include name="verifyRedirectionOnCitiesSection"></include>
+                    <include name="verifyTextOnCityPopUp"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="HindustanTimesHamburgerTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HamburgerTest"></class>
+        </classes>
+    </test>-->
+    <test name="HindustanTimesHomeTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HomeTest"></class>
+        </classes>
+    </test>
+    <!--<test name="HindustanTimesStoryTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.StoryTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesSocialSharingTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SocialSharingTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesBookmarkTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.BookmarkTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesLoginTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesSearchTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SearchTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesProfileTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.ProfileTest"></class>
+        </classes>
+    </test>
+    <test name="HindustanTimesAdvertismentTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.AdvertismentTest"></class>
+        </classes>
+    </test>-->
+</suite>

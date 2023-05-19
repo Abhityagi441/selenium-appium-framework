@@ -1,0 +1,27 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "pJbKvwzdfiXnzJ2Pvsck",
+
+  "capabilities": {
+    "project": "LH Epaper Desktop Web SSO",
+    "build": "LH Epaper Test Web",
+    "name": "LH Epaper Automation Run",
+    "browserstack.debug": true,
+    "browser": "Chrome",
+    "os_version": "10",
+    "resolution": "1920x1080",
+    "browser_version": "88.0",
+    "os": "Windows",
+    "browserstack.video": true,
+    "browserstack.idleTimeout": 180,
+    "browserstack.seleniumLogs": false,
+    "acceptSslCert": true
+  },
+  "environments": [
+    {
+      "device": "Windows 10",
+      "os_version": "10"
+    }
+  ]
+}

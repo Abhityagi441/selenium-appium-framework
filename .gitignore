@@ -1,0 +1,15 @@
+tokens/*
+/tokens/*
+*.jpg
+*.class
+target/*
+/target/
+src/main/resources/.~testdata_BlankPaper.xlsx
+src/main/.DS_Store
+/tokens
+tokens/StoredCredential
+/testng_bp_local.xml
+.DS_Store
+allure-results
+/.allure/
+/test-output/

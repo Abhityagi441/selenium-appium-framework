@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+  "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "Android Native SSO",
+    "build": "Test Android Native",
+    "name": "HT Android Native Test",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "app": "ankitmittal_pMJb8g/HTAndroidApp_dev",
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs" : true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    {
+      "device": "Google Pixel 4",
+      "os_version": "11.0"
+    }
+  ]
+}

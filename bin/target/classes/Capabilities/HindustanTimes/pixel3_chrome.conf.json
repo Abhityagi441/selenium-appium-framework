@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "SdLehx7vNLKVUpjmsRWz",
+
+  "capabilities": {
+    "project": "HindustanTimes Android Web SSO",
+    "build": "HT Test android",
+    "name": "HT Test Automation",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "browser": "Chrome",
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true
+  },
+
+  "environments": [
+    { 
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
+    }
+  ]
+}

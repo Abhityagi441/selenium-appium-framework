@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-Android-mWeb">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="LiveMint"></parameter>
+    <parameter name="executionType" value="Regression"></parameter>
+    <parameter name="platformName" value="android_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="pixel3_chrome"></parameter>
+    <parameter name="buildNumber" value="2000"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LiveMintTest-Android-mWeb-HamburgerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.HamburgerTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-NotificationTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NotificationTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-MarketTickerTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketTickerTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-MyAccountTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MyAccountTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-PageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-ShareTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ShareTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-StoryPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.StoryPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-BookmarkTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.BookmarkTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-SitemapTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SitemapTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-PaywallTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PaywallTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-LoginTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.LoginTest"></class>        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-AdvertisementTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.AdvertisementTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-MarketPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MarketPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Desktop-Web-verifyForYouTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.ForYouTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-VerifyMutualFundWidget" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MutualFundPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Android-mWeb-verifyNewsletterPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.NewsLettersTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Android-mWeb-PoliticsTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.PoliticsPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-Web-EducationTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.EducationPageTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-verifyWsjPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.WsjTest"></class>
+        </classes>
+    </test>
+    <test name="LiveMintTest-Android-mWeb-verifyMoneyPageLayout" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.MoneyTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Android-mWeb-CompaniesPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.CompaniesPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveMintTest-Android-mWeb-SectionPageTest" group-by-instances="true">
+        <classes>
+            <class name="LiveMint.SectionPageTest"></class>
+        </classes>
+    </test>
+</suite>
+

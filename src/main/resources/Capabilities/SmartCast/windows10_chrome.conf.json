@@ -1,0 +1,25 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "chaitanyashastry_bi41XA",
+  "access_key": "RKnBgD4QqNqgxnVBUbXu",
+
+  "capabilities": {
+    "project": "SmartCast Web",
+    "build": "SmartCast Test Desktop Website",
+    "name": "SmartCast Automation Run",
+    "browserstack.debug": true,
+    "browser": "Chrome",
+    "os_version": "10",
+    "resolution": "1920x1080",
+    "browser_version": "88.0",
+    "os": "Windows",
+    "browserstack.video": true,
+    "browserstack.seleniumLogs": false
+  },
+  "environments": [
+    {
+      "device": "Windows 10",
+      "os_version": "10"
+    }
+  ]
+}

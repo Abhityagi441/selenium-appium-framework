@@ -1,0 +1,25 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+  "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "HT IOS Native SSO",
+    "build": "HT Test IOS Native",
+    "name": "IOS Native Test",
+    "browserstack.debug": true,
+    "app": "ankitmittal_pMJb8g/HTStableiOSApp",
+    "browserstack.idleTimeout": 260,
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    {
+      "device": "iPhone 14",
+      "os_version": "16"
+    }
+  ]
+}

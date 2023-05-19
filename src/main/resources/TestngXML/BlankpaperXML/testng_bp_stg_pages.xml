@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlankPaperTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+<!--    <parameter name="environment" value="stg"></parameter>-->
+<!--    <parameter name="projectName" value="BlankPaper"></parameter>-->
+<!--    <parameter name="executionType" value="sanity"></parameter>-->
+<!--    <parameter name="platformName" value="desktop_web"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="browserMode" value="normal"></parameter>-->
+<!--    <parameter name="isBrowserStack" value="false"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>-->
+<!--    <parameter name="buildNumber" value="999"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LoginTest" group-by-instances="true">
+        <classes>
+            <class name="BlankPaper.login.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="DashboardTest" group-by-instances="true">
+        <classes>
+            <class name="BlankPaper.dashboard.DashboardTest"></class>
+        </classes>
+    </test>
+
+    <test name="External_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.Pages.ExternalTest"></class></classes>
+    </test>
+    <test name="Primary_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="Primary_LM" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Live Mint"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_LM" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Live Mint"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_LM" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Live Mint"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_LM" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Live Mint"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="Primary_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="Primary_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="External_Bangla" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Bangla"></parameter>
+        <classes><class name="BlankPaper.Pages.ExternalTest"></class></classes>
+    </test>
+    <test name="Primary_Bangla" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Bangla"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_Bangla" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Bangla"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_Bangla" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Bangla"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_Bangla" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Bangla"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="Primary_Smart_24" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Smart 24"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_Smart_24" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Smart 24"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_Smart_24" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Smart 24"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_Smart_24" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Smart 24"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+    <test name="Primary_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.Pages.PrimaryTest"></class></classes>
+    </test>
+    <test name="SubSection_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionTest"></class></classes>
+    </test>
+    <test name="Topic_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.Pages.TopicTest"></class></classes>
+    </test>
+    <test name="Section_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.Pages.SectionTest"></class></classes>
+    </test>
+
+
+
+<!--    <test name="BlankPaper_HT" group-by-instances="true">-->
+<!--        <parameter name="property" value="HT NEW"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--            <class name="BlankPaper.Pages.ExternalTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_LM" group-by-instances="true">-->
+<!--        <parameter name="property" value="Live Mint"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_Tech" group-by-instances="true">-->
+<!--        <parameter name="property" value="Tech"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_Bangla" group-by-instances="true">-->
+<!--        <parameter name="property" value="Bangla"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--            <class name="BlankPaper.Pages.ExternalTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_Auto" group-by-instances="true">-->
+<!--        <parameter name="property" value="Auto"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_Smart_24" group-by-instances="true">-->
+<!--        <parameter name="property" value="Smart 24"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="BlankPaper_Mint_Lounge" group-by-instances="true">-->
+<!--        <parameter name="property" value="Mint Lounge"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="BlankPaper.Pages.SubSectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.SectionTest"></class>-->
+<!--            <class name="BlankPaper.Pages.TopicTest"></class>-->
+<!--            <class name="BlankPaper.Pages.PrimaryTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

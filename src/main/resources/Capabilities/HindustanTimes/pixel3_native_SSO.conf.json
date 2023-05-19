@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "mohdsaqib_3UzDYC",
+  "access_key": "4qwLG6JU9v2eaJP6gH1E",
+
+  "capabilities": {
+    "project": "Android Native SSO",
+    "build": "Test Android Native",
+    "name": "HT Android Native Test",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "app": "bs://de84b93ee683057b0d525fc9ee7f06c4c6c544aa",
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs" : true,
+    "acceptSslCert": true
+  },
+
+  "environments": [
+    {
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
+    }
+  ]
+}

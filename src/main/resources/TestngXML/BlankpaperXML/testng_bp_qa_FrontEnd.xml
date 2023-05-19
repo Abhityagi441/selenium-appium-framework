@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlankPaperTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+<!--    <parameter name="environment" value="qa"></parameter>-->
+<!--    <parameter name="projectName" value="BlankPaper"></parameter>-->
+<!--    <parameter name="executionType" value="sanity"></parameter>-->
+<!--    <parameter name="platformName" value="desktop_web"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="browserMode" value="normal"></parameter>-->
+<!--    <parameter name="isBrowserStack" value="false"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>-->
+<!--    <parameter name="buildNumber" value="999"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LoginTest" group-by-instances="true">
+        <classes>
+            <class name="BlankPaper.login.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="DashboardTest" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes>
+            <class name="BlankPaper.dashboard.DashboardTest"></class>
+        </classes>
+    </test>
+
+    <test name="StandardStoryFrontEnd_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.StandardStoryFrontEndTest"></class></classes>
+    </test>
+
+    <test name="VideoStoryFrontEnd_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.VideoStoryFrontEndTest"></class></classes>
+    </test>
+
+    <test name="PhotoGalleryFrontend_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.PhotoGalleryStoryFrontEndTest"></class></classes>
+    </test>
+
+    <test name="LiveBlogFrontend_HT" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.LiveBlogStoryFrontEndTest"></class></classes>
+    </test>
+
+    <test name="CollectionFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.CollectionFrontEndTest"></class></classes>
+    </test>
+
+    <test name="HamburgerFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.HamburgerTestFrontEndTest"></class></classes>
+    </test>
+
+    <test name="PrimaryFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.PrimaryFrontEndTest"></class></classes>
+    </test>
+
+    <test name="SectionFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.SectionFrontEndTest"></class></classes>
+    </test>
+
+    <test name="SubSectionFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.SubSectionFrontEndTest"></class></classes>
+    </test>
+
+    <test name="TopicFrontend_HT" group-by-instances="true">
+        <parameter name="property" value="HT NEW"></parameter>
+        <classes><class name="BlankPaper.FrontEnd.TopicFrontEndTest"></class></classes>
+    </test>
+
+
+</suite>

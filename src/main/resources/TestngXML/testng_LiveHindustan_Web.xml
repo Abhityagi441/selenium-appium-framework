@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite" preserve-order="false">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener" />
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer" />
+    </listeners>
+
+    <!--    <parameter name="environment" value="prod"></parameter>-->
+    <!--    <parameter name="projectName" value="LiveHindustan"></parameter>-->
+    <!--    <parameter name="executionType" value="sanity"></parameter>-->
+    <!--    <parameter name="platformName" value="desktop_web"></parameter>-->
+    <!--    <parameter name="browser" value="chrome"></parameter>-->
+    <!--    <parameter name="browserMode" value="normal"></parameter>-->
+    <!--    <parameter name="isBrowserStack" value="false"></parameter>-->
+    <!--    <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>-->
+    <!--    <parameter name="buildNumber" value="66666"></parameter>-->
+    <!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+
+    <test name="LiveHindustanTest_1" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.LoginWithPassTest" />
+            <class name="LiveHindustan.NewsBriefTest" />
+            <class name="LiveHindustan.StateTest" />
+            <class name="LiveHindustan.PhotoTest" />
+        </classes>
+    </test>
+
+    <test name="LiveHindustanTest_2" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.LoginWithPassTest" />
+            <class name="LiveHindustan.StoryTest" />
+            <class name="LiveHindustan.AstrologyTest" />
+            <class name="LiveHindustan.VideoTest" />
+            <class name="LiveHindustan.LandingTest" />
+        </classes>
+    </test>
+
+
+    <test name="LiveHindustanTest_3" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.LoginWithPassTest" />
+            <class name="LiveHindustan.BusinessTest" />
+            <class name="LiveHindustan.AutoTest" />
+            <class name="LiveHindustan.TopicTest" />
+            <class name="LiveHindustan.HomeTest" />
+            <class name="LiveHindustan.LoginTest" />
+        </classes>
+    </test>
+</suite>

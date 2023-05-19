@@ -1,0 +1,20 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "harshsharma_yjzAtv",
+  "access_key": "QdN3NzBUuzgb6GhLmHwv",
+
+  "capabilities": {
+    "project": "HT Auto Android Web",
+    "build": "HT Auto Test android",
+    "name": "HT Auto Test Automation",
+    "browserstack.debug": true,
+    "browser": "Chrome"
+  },
+
+  "environments": [
+    { 
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
+    }
+  ]
+}

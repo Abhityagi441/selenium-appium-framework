@@ -1,0 +1,24 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ankitmittal_pMJb8g",
+  "access_key": "o7zyqfa312aP3vQ6F7h8",
+
+  "capabilities": {
+    "project": "LM IOS Native SSO",
+    "build": "LM Test IOS Native",
+    "name": "IOS Native Test",
+    "browserstack.debug": true,
+    "app": "ankitmittal_pMJb8g/LMiOSApp_dev",
+    "browserstack.idleTimeout":300 ,
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true
+  },
+
+  "environments": [
+    {
+      "device": "iPhone 12",
+      "os_version": "14.0"
+    }
+  ]
+}

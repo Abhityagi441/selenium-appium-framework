@@ -1,0 +1,28 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "SdLehx7vNLKVUpjmsRWz",
+
+  "capabilities": {
+    "project": "HT Desktop Web SSO",
+    "build": "HT Test Desktop Website",
+    "name": "HT Automation Run",
+    "browserstack.debug": true,
+    "browser": "Chrome",
+    "os_version": "10",
+    "resolution": "1920x1080",
+    "browser_version": "88.0",
+    "os": "Windows",
+    "browserstack.video": true,
+    "browserstack.idleTimeout": 180,
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true
+  },
+  "environments": [
+    {
+      "device": "Windows 10",
+      "os_version": "10"
+    }
+  ]
+}

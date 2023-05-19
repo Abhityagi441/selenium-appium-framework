@@ -1,0 +1,20 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "pJbKvwzdfiXnzJ2Pvsck",
+
+  "capabilities": {
+    "project": "HT Epaper IOS Web SSO",
+    "build": "HT Epaper Test IOS",
+    "name": "HT Epaper Test Automation",
+    "browserstack.debug": true,
+    "browser": "Safari"
+  },
+
+  "environments": [
+    { 
+      "device": "iPhone 11",
+      "os_version": "14"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--        <parameter name="environment" value="prod"></parameter>-->
+    <!--        <parameter name="projectName" value="LiveHindustan"></parameter>-->
+    <!--        <parameter name="executionType" value="sanity"></parameter>-->
+    <!--        <parameter name="platformName" value="android_web"></parameter>-->
+    <!--        <parameter name="browser" value="chrome"></parameter>-->
+    <!--        <parameter name="browserMode" value="normal"></parameter>-->
+    <!--        <parameter name="isBrowserStack" value="true"></parameter>-->
+    <!--        <parameter name="capabilitiesJson" value="pixel3_chrome"></parameter>-->
+    <!--        <parameter name="buildNumber" value="77777"></parameter>-->
+    <!--        <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LiveHindustan-Android-Web-HomeTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.HomeTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-Web-LoginTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-Web-PhotoTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.PhotoTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-Web-StoryTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.StoryTest"></class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-Web-AstrologyTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.AstrologyTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-MWeb-AutoTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.AutoTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-MWeb-StateTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.StateTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-MWeb-VideoTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.VideoTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="LiveHindustan-Android-MWeb-NewsBriefTest" group-by-instances="true">
+        <classes>
+            <class name="LiveHindustan.NewsBriefTest">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

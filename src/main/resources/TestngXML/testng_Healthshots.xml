@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Healthshots TestSuite">
+	<listeners>
+		<listener class-name="com.listeners.AlterSuitListener"></listener>
+		<listener class-name="com.listeners.TestListener"></listener>
+		<listener class-name="com.listeners.AnnotationTransformer"></listener>
+	</listeners>
+
+	<!--  	<parameter name="environment" value="prod"></parameter>
+        <parameter name="projectName" value="Healthshots"></parameter>
+        <parameter name="executionType" value="sanity"></parameter>
+        <parameter name="platformName" value="desktop_web"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browserMode" value="normal"></parameter>
+        <parameter name="isBrowserStack" value="true"></parameter>
+        <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>
+        <parameter name="buildNumber" value="209"></parameter>
+        <parameter name="googleSheetFlag" value="false"></parameter>
+
+		<test name="HealthshotsTest" group-by-instances="true">
+            <classes>
+
+                <class name="Healthshots.LoginTest">
+                <methods>
+					<include name="verifyLoginWithEmailAndPassword"/>
+                     <include name="verifyLoginWithMobileAndPassword"/>
+					 <include name="verifyLoginWithFacebook"/>
+
+				</methods>
+                    </class>
+
+                </classes>
+            </test>
+		-->
+	<test name="HealthshotsHomeTest" group-by-instances="true">
+		<classes>
+			<class name="Healthshots.HomeTest">
+				<methods>
+					 <include name="verifyFacebookSharingFromLatestStory"/>
+					 <include name="verifyTwitterSharingFromLatestStory"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

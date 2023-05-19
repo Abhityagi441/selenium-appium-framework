@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HT_AUTOTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+<!--    <parameter name="environment" value="prod"></parameter>-->
+<!--    <parameter name="projectName" value="HT_AUTO"></parameter>-->
+<!--    <parameter name="executionType" value="sanity"></parameter>-->
+<!--    <parameter name="platformName" value="desktop_web"></parameter>-->
+<!--    <parameter name="browser" value="chrome"></parameter>-->
+<!--    <parameter name="browserMode" value="private"></parameter>-->
+<!--    <parameter name="isBrowserStack" value="false"></parameter>-->
+<!--    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>-->
+<!--    <parameter name="buildNumber" value="1011"></parameter>-->
+<!--    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="HT_AUTOLoginTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HT_AUTO.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithMobileAndPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="HT_AUTOHomePageTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HT_AUTO.HomePageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="HT_AUTOLatestNewsTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HT_AUTO.LatestNewsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="HT_AUTOAutoNewsTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HT_AUTO.AutoNewsTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+

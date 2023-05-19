@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="LH_Epaper"></parameter>
+    <parameter name="executionType" value="sanity"></parameter>
+    <parameter name="platformName" value="desktop_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="private"></parameter>
+    <parameter name="isBrowserStack" value="false"></parameter>
+    <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>
+
+    <test name="LHEpaperLoginTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="LH_Epaper.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithEmailAndPassword"/>
+                    <include name="verifyLoginWithMobileAndPassword"/>
+                    <exclude name="verifyLoginWithFacebook"/>
+                    <exclude name="verifyLoginWithGoogle"/>
+                    <include name="verifyLoginWithEmailOTP"/>
+                    <include name="verifyLoginWithMobileOTP"/>
+                    <exclude name="verifyLoginWithAppleID"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

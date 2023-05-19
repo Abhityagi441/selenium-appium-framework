@@ -1,0 +1,11 @@
+*.png
+*.jpg
+*.html
+/src/main/resources/screenshots/
+src/main/resources/screenshots/
+ExtentReports/
+testng_bp_local.xml
+tokens/StoredCredential
+/tokens/
+/tokens
+allure-results

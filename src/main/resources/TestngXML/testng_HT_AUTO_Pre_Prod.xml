@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HT_AUTOTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+   <!-- <parameter name="environment" value="preProd"></parameter>
+    <parameter name="projectName" value="HT_AUTO"></parameter>
+    <parameter name="executionType" value="sanity"></parameter>
+    <parameter name="platformName" value="desktop_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="false"></parameter>
+    <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>
+    <parameter name="capabilitiesJson" value="pixel3_chrome"></parameter>
+    <parameter name="buildNumber" value="111"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+
+    <test name="HT_AUTOTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HT_AUTO.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithMobileAndPassword"/>
+                    <include name="verifyLoginWithFacebook"/>
+                    <include name="verifyLoginWithGoogle"/>
+                </methods>
+            </class>
+            <class name="HT_AUTO.BikeDetailTest"/>
+            <class name="HT_AUTO.CompareBikeTest"/>
+            <class name="HT_AUTO.CTACarProductDetailsTest"/>
+            <class name="HT_AUTO.PDPLinkModelNameTest"/>
+            <class name="HT_AUTO.CarRoadPriceTest"></class>
+            <class name="HT_AUTO.HamburgerMenuAvailableTest"></class>
+            <class name="HT_AUTO.CompareCarsTest"></class>
+            <class name="HT_AUTO.BikeListingTest"></class>
+            <class name="HT_AUTO.CarDetailsTest"></class>
+            <class name="HT_AUTO.CarListingTest"></class>
+            <class name="HT_AUTO.PDPLinkOnBikeModleTest"></class>
+            <class name="HT_AUTO.CarByTrendingPopularBudgetTest"></class>
+            <class name="HT_AUTO.OnSiteSearchTest"></class>
+            <class name="HT_AUTO.SearchAnyBikeBrandAndModelTest"></class>
+            <class name="HT_AUTO.BikesByTrendingSearchWidgetTest"></class>
+            <class name="HT_AUTO.CarsByTrendingSearchWidgetTest"></class>
+            <class name="HT_AUTO.TopNavigationTest"></class>
+            <class name="HT_AUTO.SectionAndSubSectionTest"></class>
+        </classes>
+    </test>
+</suite>

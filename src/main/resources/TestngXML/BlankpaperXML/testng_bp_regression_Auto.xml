@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlankPaperTestSuite" preserve-order="false">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+    <!--<parameter name="environment" value="stg"></parameter>
+    <parameter name="projectName" value="BlankPaper"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="desktop_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="false"></parameter>
+    <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>
+    <parameter name="buildNumber" value="999"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LoginTest" group-by-instances="true">
+        <classes>
+            <class name="BlankPaper.login.LoginTest"></class>
+        </classes>
+    </test>
+
+    <!--  Auto starts here -->
+    <test name="StandardStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.StandardStoryTest"></class></classes>
+    </test>
+    <test name="LiveBlog_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.LiveBlogTest"></class></classes>
+    </test>
+    <test name="PhotoGallery_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.PhotoGalleryTest"></class></classes>
+    </test>
+    <test name="VideoStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.VideoStoryTest"></class></classes>
+    </test>
+    <test name="ListicleStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.ListicleStoryTest"></class></classes>
+    </test>
+    <test name="WebStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.WebStoryTest"></class></classes>
+    </test>
+    <test name="Collection_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.CollectionTest"></class></classes>
+    </test>
+    <test name="Embed_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.EmbedTest"></class></classes>
+    </test>
+    <test name="JsonEmbed_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.JsonEmbedTest"></class></classes>
+    </test>
+    <test name="Images_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.images.ImagesTest"></class></classes>
+    </test>
+    <test name="Hamburger_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.HamburgerTest"></class></classes>
+    </test>
+    <test name="SubSectionL2_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.SubSectionL2Test"></class></classes>
+    </test>
+    <test name="Feeds_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.feeds.FeedsTest"></class></classes>
+    </test>
+    <test name="Reports_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.SideBar.ReportsTest"></class></classes>
+    </test>
+
+
+</suite>

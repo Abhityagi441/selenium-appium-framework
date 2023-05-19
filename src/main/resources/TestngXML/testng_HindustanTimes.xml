@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="sanity"></parameter>
+    <parameter name="platformName" value="desktop_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="false"></parameter>
+    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>
+    <parameter name="buildNumber" value="888"></parameter>
+
+
+
+    <test name="HindustanTimesLoginTest" group-by-instances="true" preserve-order="true">
+        <classes>
+            <class name="HindustanTimes.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithEmailAndPassword"/>
+                    <include name="verifyLoginWithMobileAndPassword"/>
+                    <exclude name="verifyLoginWithGoogle"/>
+                    <exclude name="verifyLoginWithFacebook"/>
+                    <include name="verifyLoginWithEmailOTP"/>
+                    <include name="verifyLoginWithMobileOTP"/>
+                    <exclude name="verifyLoginWithAppleID"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

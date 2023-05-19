@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-iOS-Native">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+      <!--<parameter name="environment" value="prod"></parameter>
+      <parameter name="projectName" value="LiveMint"></parameter>
+      <parameter name="executionType" value="regression"></parameter>
+      <parameter name="platformName" value="ios_native"></parameter>
+      <parameter name="browser" value=""></parameter>
+      <parameter name="browserMode" value=""></parameter>
+      <parameter name="isBrowserStack" value="true"></parameter>
+      <parameter name="capabilitiesJson" value="iphone12_native"></parameter>
+      <parameter name="buildNumber" value="16002"></parameter>
+      <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+
+    <test name="LiveMintTest-iOS-Native-MintLoungePageTest" group-by-instances="true">
+        <classes><class name="LiveMint.MintLoungeTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-CoachMarkPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.CoachMarkTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-PodCastPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.PodCastTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-ForYoyPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.ForYouTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-MarketTickerTest" group-by-instances="true">
+        <classes><class name="LiveMint.MarketTickerTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-MarketPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.MarketPageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-HomePageTest" group-by-instances="true">
+        <classes><class name="LiveMint.HomePageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-NewsPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.NewsTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-LMPremiumTest" group-by-instances="true">
+        <classes><class name="LiveMint.LMPremiumPageTest"></class></classes>
+    </test>
+
+    <test name="LiveMintTest-iOS-Native-NewsLettersPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.NewsLettersTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-SectionPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.SectionPageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-SubscriptionPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.SubscriptionPageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-BookmarkTest" group-by-instances="true">
+        <classes><class name="LiveMint.BookmarkTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-ShareTest" group-by-instances="true">
+        <classes><class name="LiveMint.ShareTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-StoryPageTest" group-by-instances="true">
+        <classes><class name="LiveMint.StoryPageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-MyAccountTest" group-by-instances="true">
+        <classes><class name="LiveMint.MyAccountTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-PaywallTest" group-by-instances="true">
+        <classes><class name="LiveMint.PaywallTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-LoginTest" group-by-instances="true">
+        <classes><class name="LiveMint.LoginTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-SearchTest" group-by-instances="true">
+        <classes><class name="LiveMint.SearchTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-SettingsTest" group-by-instances="true">
+        <classes><class name="LiveMint.SettingsTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-EPaperTest" group-by-instances="true">
+        <classes><class name="LiveMint.EPaperTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-NavigationTest" group-by-instances="true">
+        <classes><class name="LiveMint.NavigationTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-PageTest" group-by-instances="true">
+        <classes><class name="LiveMint.PageTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-AdvertisementTest" group-by-instances="true">
+        <classes><class name="LiveMint.AdvertisementTest"></class></classes>
+    </test>
+    <test name="LiveMintTest-iOS-Native-ExplorePageTest" group-by-instances="true">
+        <classes><class name="LiveMint.ExplorePageTest"></class></classes>
+    </test>
+
+</suite>

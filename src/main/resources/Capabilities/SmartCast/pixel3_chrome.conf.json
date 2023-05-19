@@ -1,0 +1,20 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "chaitanyashastry_bi41XA",
+  "access_key": "RKnBgD4QqNqgxnVBUbXu",
+
+  "capabilities": {
+    "project": "SmartCast Android Web ",
+    "build": "SmartCast Test android Web",
+    "name": "SmartCast Android Web Automation",
+    "browserstack.debug": true,
+    "browser": "Chrome"
+  },
+
+  "environments": [
+    { 
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
+    }
+  ]
+}

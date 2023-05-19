@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlankPaperTestSuite" preserve-order="false">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+<!--        <parameter name="environment" value="prod"></parameter>-->
+<!--        <parameter name="projectName" value="BlankPaper"></parameter>-->
+<!--        <parameter name="executionType" value="Production"></parameter>-->
+<!--        <parameter name="platformName" value="desktop_web"></parameter>-->
+<!--        <parameter name="browser" value="chrome"></parameter>-->
+<!--        <parameter name="browserMode" value="normal"></parameter>-->
+<!--        <parameter name="isBrowserStack" value="false"></parameter>-->
+<!--        <parameter name="capabilitiesJson" value="windows10_chrome_combined"></parameter>-->
+<!--        <parameter name="buildNumber" value="999"></parameter>-->
+<!--        <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="LoginTest" group-by-instances="true">
+        <classes>
+            <class name="BlankPaper.login.LoginTest"></class>
+        </classes>
+    </test>
+
+    <!--  Tech starts here -->
+    <test name="StandardStory_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.StandardStoryTest"></class></classes>
+    </test>
+    <test name="LiveBlog_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.LiveBlogTest"></class></classes>
+    </test>
+    <test name="PhotoGallery_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.PhotoGalleryTest"></class></classes>
+    </test>
+    <test name="VideoStory_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.VideoStoryTest"></class></classes>
+    </test>
+    <test name="Collection_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.CollectionTest"></class></classes>
+    </test>
+    <test name="InputFormTest_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.InputFormTest"></class></classes>
+    </test>
+    <test name="Embed_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.EmbedTest"></class></classes>
+    </test>
+    <test name="JsonEmbed_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.stories.JsonEmbedTest"></class></classes>
+    </test>
+    <test name="Images_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.images.ImagesTest"></class></classes>
+    </test>
+    <test name="Hamburger_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.Pages.HamburgerTest"></class></classes>
+    </test>
+    <test name="Videos_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.videos.VideosTest"></class></classes>
+    </test>
+    <test name="Feeds_Tech" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Tech"></parameter>
+        <classes><class name="BlankPaper.feeds.FeedsTest"></class></classes>
+    </test>
+
+    <!--  Auto starts here -->
+    <test name="StandardStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.StandardStoryTest"></class></classes>
+    </test>
+    <test name="LiveBlog_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.LiveBlogTest"></class></classes>
+    </test>
+    <test name="PhotoGallery_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.PhotoGalleryTest"></class></classes>
+    </test>
+    <test name="VideoStory_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.VideoStoryTest"></class></classes>
+    </test>
+    <test name="Collection_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.CollectionTest"></class></classes>
+    </test>
+    <test name="Embed_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.EmbedTest"></class></classes>
+    </test>
+    <test name="JsonEmbed_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.stories.JsonEmbedTest"></class></classes>
+    </test>
+    <test name="Images_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.images.ImagesTest"></class></classes>
+    </test>
+    <test name="Hamburger_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.Pages.HamburgerTest"></class></classes>
+    </test>
+    <test name="Videos_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.videos.VideosTest"></class></classes>
+    </test>
+    <test name="Feeds_Auto" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Auto"></parameter>
+        <classes><class name="BlankPaper.feeds.FeedsTest"></class></classes>
+    </test>
+
+    <!--  Mint Lounge starts here -->
+    <test name="StandardStory_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.StandardStoryTest"></class></classes>
+    </test>
+    <test name="LiveBlog_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.LiveBlogTest"></class></classes>
+    </test>
+    <test name="PhotoGallery_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.PhotoGalleryTest"></class></classes>
+    </test>
+    <test name="VideoStory_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.VideoStoryTest"></class></classes>
+    </test>
+    <test name="Collection_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.CollectionTest"></class></classes>
+    </test>
+    <test name="InputFormTest_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.InputFormTest"></class></classes>
+    </test>
+    <test name="Embed_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.EmbedTest"></class></classes>
+    </test>
+    <test name="JsonEmbed_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.stories.JsonEmbedTest"></class></classes>
+    </test>
+    <test name="Images_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.images.ImagesTest"></class></classes>
+    </test>
+    <test name="Hamburger_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.Pages.HamburgerTest"></class></classes>
+    </test>
+    <test name="Videos_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.videos.VideosTest"></class></classes>
+    </test>
+    <test name="Feeds_Mint_Lounge" group-by-instances="true" preserve-order="false">
+        <parameter name="property" value="Mint Lounge"></parameter>
+        <classes><class name="BlankPaper.feeds.FeedsTest"></class></classes>
+    </test>
+
+</suite>

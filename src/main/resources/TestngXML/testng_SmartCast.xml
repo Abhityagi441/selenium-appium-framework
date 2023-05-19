@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmartCastTestSuite">
+	<listeners>
+		<listener class-name="com.listeners.AlterSuitListener"></listener>
+		<listener class-name="com.listeners.TestListener"></listener>
+		<listener class-name="com.listeners.AnnotationTransformer"></listener>
+	</listeners>
+
+<!--	<parameter name="environment" value="prod"></parameter>
+	<parameter name="projectName" value="SmartCast"></parameter>
+	<parameter name="executionType" value="sanity"></parameter>
+	<parameter name="platformName" value="android_web"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browserMode" value="normal"></parameter>
+	<parameter name="isBrowserStack" value="true"></parameter>
+	<parameter name="capabilitiesJson" value="pixel3_chrome"></parameter>
+	<parameter name="buildNumber" value="09"></parameter>
+	<parameter name="googleSheetFlag" value="false"></parameter>-->
+
+	<!--<test name="SmartCastTest" group-by-instances="true">
+            <classes>
+                <class name="SmartCast.HomeTest"></class>
+                <class name="SmartCast.LoginTest"></class>
+                <class name="SmartCast.SearchTest"></class>
+            </classes>
+        </test>-->
+	<test name="SmartCastLoginTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="SmartCastHomeTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.HomeTest">
+				<methods>
+					<include name="verifyGetHomePageTitleTest"/>
+					<include name="verifyClickSmartCastLogoImageTest"/>
+					<include name="verifyHamburger"/>
+					<include name="verifyFacebookSharingFromLatestPodcast"/>
+					<include name="verifyTwitterSharingFromLatestPodcast"/>
+					<include name="verifyBookmarkStory"/>
+					<include name="verifyPodcastPlayerFunctions"/>
+					<include name="verifyPodcastInformation"/>
+					<include name="verifyShareEmailFunctionality"/>
+					<include name="verifyHomeSectionTrays"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SmartCastSearchTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.SearchTest"></class>
+		</classes>
+	</test>
+	<test name="SmartCastTrendingTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.TrendingTest"></class>
+		</classes>
+	</test>
+	<test name="SmartCastPublishersTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.PublishersTest"></class>
+		</classes>
+	</test>
+	<test name="SmartCastCategoriesTest" group-by-instances="true">
+		<classes>
+			<class name="SmartCast.CategoriesTest"></class>
+		</classes>
+	</test>
+</suite>

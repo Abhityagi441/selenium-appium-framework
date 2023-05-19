@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LiveMintTestSuite-iOS-mWeb">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+      <!--<parameter name="environment" value="prod"></parameter>
+      <parameter name="projectName" value="LiveMint"></parameter>
+      <parameter name="executionType" value="Regression"></parameter>
+      <parameter name="platformName" value="ios_web"></parameter>
+      <parameter name="browser" value="chrome"></parameter>
+      <parameter name="browserMode" value="normal"></parameter>
+      <parameter name="isBrowserStack" value="true"></parameter>
+      <parameter name="capabilitiesJson" value="iphone11_safari"></parameter>
+      <parameter name="buildNumber" value="5000"></parameter>
+      <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+      <test name="LiveMintTest-iOS-web-verifyLMPremiumPageTest" group-by-instances="true">
+          <classes>
+              <class name="LiveMint.LMPremiumPageTest"></class>
+          </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-CompaniesPageTest" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.CompaniesPageTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-verifyMoneyPageLayout" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.MoneyTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-verifyWsjPageLayout" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.WsjTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-ios-Web-EducationTest" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.EducationPageTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-MarketPageTest" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.MarketPageTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-verifyForYouTest" group-by-instances="true">
+              <classes>
+                  <class name="LiveMint.ForYouTest"></class>
+              </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-BookmarkTest" group-by-instances="true">
+          <classes>
+              <class name="LiveMint.BookmarkTest"></class>
+          </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-VerifyMutualFundWidget" group-by-instances="true">
+          <classes>
+              <class name="LiveMint.MutualFundPageTest"></class>
+          </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-PoliticsTest" group-by-instances="true">
+          <classes>
+              <class name="LiveMint.PoliticsPageTest"></class>
+          </classes>
+      </test>
+
+      <test name="LiveMintTest-iOS-web-SectionPageTest" group-by-instances="true">
+          <classes>
+              <class name="LiveMint.SectionPageTest"></class>
+          </classes>
+      </test>
+
+  <!--    in use for LM web -->
+      <test name="LiveMintTest-iOS-web-HamburgerTest" group-by-instances="true">
+            <classes>
+                <class name="LiveMint.HamburgerTest"></class>
+            </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-NotificationTest" group-by-instances="true">
+            <classes>
+                <class name="LiveMint.NotificationTest"></class>
+            </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-MarketTickerTest" group-by-instances="true">
+            <classes>
+                <class name="LiveMint.MarketTickerTest"></class>
+            </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-PageTest" group-by-instances="true">
+            <classes>
+                <class name="LiveMint.PageTest"></class>
+            </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-StoryPageTest" group-by-instances="true">
+            <classes>
+                <class name="LiveMint.StoryPageTest"></class>
+            </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-SitemapTest" group-by-instances="true">
+                <classes>
+                    <class name="LiveMint.SitemapTest"></class>
+                </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-PaywallTest" group-by-instances="true">
+                <classes>
+                    <class name="LiveMint.PaywallTest"></class>
+                </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-LoginTest" group-by-instances="true">
+                <classes>
+                    <class name="LiveMint.LoginTest"></class>        </classes>
+      </test>
+      <test name="LiveMintTest-iOS-web-AdvertisementTest" group-by-instances="true">
+                <classes>
+                    <class name="LiveMint.AdvertisementTest"></class>
+                </classes>
+      </test>
+      <test name="LiveMintTest-ios-web-verifyNewsletterPageLayout" group-by-instances="true">
+                <classes>
+                    <class name="LiveMint.NewsLettersTest"></class>
+                </classes>
+      </test>
+
+</suite>
+

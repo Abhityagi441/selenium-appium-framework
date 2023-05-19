@@ -1,0 +1,32 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "username": "ataurrahman6",
+  "access_key": "SdLehx7vNLKVUpjmsRWz",
+
+  "capabilities": {
+    "project": "HT IOS Web SSO",
+    "build": "HT Test IOS",
+    "name": "IOS Web SSO",
+    "browserstack.debug": true,
+    "browserstack.idleTimeout": 180,
+    "browser": "Safari",
+    "browserstack.seleniumLogs": true,
+    "browserstack.appiumLogs": true,
+    "browserstack.networkLogs": true
+  },
+
+  "environments": [
+<<<<<<< HEAD
+    {
+=======
+    { 
+>>>>>>> 294ce58920dedeae2ebfe3cd3dea74a228270c2e
+      "device": "iPhone 11",
+      "os_version": "14"
+    }
+  ]
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 294ce58920dedeae2ebfe3cd3dea74a228270c2e

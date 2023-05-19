@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="android_web"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browserMode" value="normal"></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="pixel3_chrome_ataur"></parameter>
+    <parameter name="buildNumber" value="5362"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>
+-->
+
+    <test name="HindustanTimes-Android-MWeb-SocialSharingTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SocialSharingTest">
+                <methods>
+                    <include name="verifySocialSharingFunctionalityUpFrontInline"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-InlineStoriesTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.InlineStoriesTest">
+                <methods>
+                    <include name="verifyStoryDetailPage"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="HindustanTimes-Android-MWeb-StoryTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.StoryTest">
+                <methods>
+                    <include name="verifyAuthorOrAgencyName"></include>
+                    <include name="verifyHeadlineIsClickable"></include>
+                    <include name="verifyNewsletterBannerDisplayed"></include>
+                    <include name="verifyPhotoContentBookMarkShare"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> 
+</suite>

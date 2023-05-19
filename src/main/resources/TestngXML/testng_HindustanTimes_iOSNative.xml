@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite">
+    <listeners>
+        <listener class-name="com.listeners.AlterSuitListener"></listener>
+        <listener class-name="com.listeners.TestListener"/>
+        <listener class-name="com.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <!--<parameter name="environment" value="prod"></parameter>
+    <parameter name="projectName" value="HindustanTimes"></parameter>
+    <parameter name="executionType" value="regression"></parameter>
+    <parameter name="platformName" value="ios_native"></parameter>
+    <parameter name="browser" value=""></parameter>
+    <parameter name="browserMode" value=""></parameter>
+    <parameter name="isBrowserStack" value="true"></parameter>
+    <parameter name="capabilitiesJson" value="iphone12_native"></parameter>
+    <parameter name="buildNumber" value="2124"></parameter>
+    <parameter name="googleSheetFlag" value="true"></parameter>-->
+
+    <test name="HindustanTimesSSOLoginTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SSOTest"></class>
+            <!--
+            <class name="HindustanTimes.StoryTest"></class>
+            <class name="HindustanTimes.BookmarkTest"></class>
+            <class name="HindustanTimes.SearchTest"></class>
+            <class name="HindustanTimes.ProfileTest"></class>
+            <class name="HindustanTimes.SectionTest"></class>
+            -->
+        </classes>
+    </test>
+
+    <test name="HindustanTimesLoginTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="HindustanTimesSocialSharingTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.SocialSharingTest"></class>
+        </classes>
+    </test>
+
+    <test name="HindustanTimesAdvertismentTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.AdvertismentTest"></class>
+        </classes>
+    </test>
+
+    <test name="HindustanTimesHomeTest" group-by-instances="true">
+        <classes>
+            <class name="HindustanTimes.HomeTest"></class>
+        </classes>
+    </test>
+
+</suite>
